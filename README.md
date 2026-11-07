@@ -1,5 +1,20 @@
 # VizHub
 
+> **Historical artifact — VizHub version 1 (2018-era).** This repository is no longer maintained, and the linked screenshots, original product pitch, old community channels and production notes do **not** describe the current [VizHub](https://vizhub.com/) product. The material is retained for architecture and teaching history.
+>
+> Do not use the old deployment instructions or integration secrets against live services. The dependency and CI toolchain predates the current project; successful installation on a modern machine is not guaranteed.
+
+## Source and local study
+
+- [`packages/`](packages/) contains the original Lerna packages; [`docs/`](docs/) contains historical reference and production documents.
+- The root `package.json` provides `npm run bootstrap`, `npm test`, and `npm run testAll`. The bootstrap script uses the legacy Lerna workflow; `testAll` also runs web tests requiring a local server and its prerequisites.
+- The original submodules can be inspected with `git submodule update --init`, but this changes a local checkout and may require fetching old dependencies.
+- This code is a reference for earlier clean-architecture ideas, **not** the recommended starting point for new VizHub work.
+- Later projects include [VizHub Cloud](https://github.com/vizhub-studio/vizhub-cloud) and [VZCode](https://github.com/vizhub-studio/vzcode).
+
+## Archived project description
+
+
 This repository contains version 1 of the web app that was once deployed to https://vizhub.com. This repository is no longer maintained.
 
 [![image](https://user-images.githubusercontent.com/68416/46601539-05f7ba00-cb0b-11e8-90eb-587dc927962e.png)](https://vizhub.com/curran/5c907e49d0294538aad03ad1f41e1e28)
@@ -8,10 +23,10 @@ This repository contains version 1 of the web app that was once deployed to http
 To get involved and stay updated:
 
  * Join the `#vizhub` channel of the [D3 Slack](https://d3-slackin.herokuapp.com/)
- * Check out the [VizHub Scrum Board](https://github.com/orgs/datavis-tech/projects/1).
+ * The historic VizHub Scrum Board was managed under an earlier organization and is not the current issue tracker.
  * Follow [@datavis_tech on Twitter](https://twitter.com/datavis_tech)
 
-See also https://github.com/datavis-tech/vizhub-ui
+See also the later [vizhub-ui](https://github.com/vizhub-studio/vizhub-ui) repository.
 
 Table of Contents:
 
